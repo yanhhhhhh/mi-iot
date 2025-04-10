@@ -296,7 +296,7 @@ export default class HomePage extends SafeAreaBaseContainer {
       this.baseRemoveTopNaviMargin();
 
       // 设置背景view
-      let bg = powerOn ? { color: '#57B3E7', opacity: 1.0, color1: '#57B3E7', opacity1: 0.0 } : { color: '#324F60', opacity: 1.0, color1: '#324F60', opacity1: 0.0 };
+      let bg = powerOn ? { color: '#00D3BE', opacity: 1.0, color1: '#00D3BE', opacity1: 0.0 } : { color: '#324F60', opacity: 1.0, color1: '#324F60', opacity1: 0.0 };
       if (GSSystem.isDarkMode()) { // 黑暗模式
         bg = powerOn ? { color: '#003934', opacity: 1.0, color1: '#000000', opacity1: 1.0 } : { color: '#324F60', opacity: 0.2, color1: '#000000', opacity1: 1.0 };
       }
@@ -412,7 +412,7 @@ export default class HomePage extends SafeAreaBaseContainer {
             onValueChange={(value) => console.log(value)}
             switchValue={true}
             tintColor="#E5E5E5"
-            onTintColor="#57B3E7"
+            onTintColor="#00D3BE"
             showShadow={true}
             marginTop={0}
             hideArrow ={true}
@@ -420,12 +420,12 @@ export default class HomePage extends SafeAreaBaseContainer {
             iconStyle={{ ...IconStyles.size42 }}
             cardStyle={{ borderRadius: 12, width: contentWidth, height: 82, backgroundColor: 'white', marginTop: 0 }}
           />
-          <TouchableOpacity style = {{ position: 'absolute', width: 80, height: 34, borderRadius: 22, backgroundColor: hexToRGBA('#57B3E7', 0.1), right: 20, justifyContent: 'center', alignItems: 'center' }} onPress = {
+          <TouchableOpacity style = {{ position: 'absolute', width: 80, height: 34, borderRadius: 22, backgroundColor: hexToRGBA('#00D3BE', 0.1), right: 20, justifyContent: 'center', alignItems: 'center' }} onPress = {
             () => {
               this.onPressComfyMode();
             }
           }>
-            <Text style = {{ color: hexToRGBA('#57B3E7', isComfyMode ? 0.3 : 1), fontSize: 13, fontWeight: GSFont.Semibold }}>{isComfyMode ? GSLocalize("acid134") : GSLocalize("acid126")}</Text>
+            <Text style = {{ color: hexToRGBA('#00D3BE', isComfyMode ? 0.3 : 1), fontSize: 13, fontWeight: GSFont.Semibold }}>{isComfyMode ? GSLocalize("acid134") : GSLocalize("acid126")}</Text>
           </TouchableOpacity>
           {
             (!powerOn || unsupportControllerId) && ACTurnOffMask 
@@ -442,7 +442,7 @@ export default class HomePage extends SafeAreaBaseContainer {
             onValueChange={(value) => console.log(value)}
             switchValue={true}
             tintColor="#E5E5E5"
-            onTintColor="#57B3E7"
+            onTintColor="#00D3BE"
             showShadow={true}
             marginTop={0}
             icon={fastColdOn ? GSImage.fastCoolingOn : GSImage.fastCooling}
@@ -486,7 +486,7 @@ export default class HomePage extends SafeAreaBaseContainer {
                 onSlidingComplete={(index) => {
                   this.setTemp(index);
                 }}
-                minimumTrackTintColor="#57B3E7"
+                minimumTrackTintColor="#00D3BE"
                 maximumTrackTintColor="#F5F5F5"
               />
               <View style={{ width: 2, height: 48, backgroundColor: 'white' }} />
@@ -517,7 +517,7 @@ export default class HomePage extends SafeAreaBaseContainer {
                   this.onSelectWindValue(tWind);
                 }} style={{ ...styles.windIconsCell, width: (MainScreen.width - (iSpeeds.length == 3 ? 20 + 24 : 24)) / iSpeeds.length }}>
                   <Image source={windValue == tWind.value ? GSImage[`wind${ tWind.upper }Selected`] : GSImage[`wind${ tWind.upper }`]} style={IconStyles.size48} />
-                  <Text style={[styles.windText, { color: windValue == tWind.value ? '#57B3E7' : '#999999' }]}>{tWind.name}</Text>
+                  <Text style={[styles.windText, { color: windValue == tWind.value ? '#00D3BE' : '#999999' }]}>{tWind.name}</Text>
                 </TouchableOpacity>;
               })
             }
@@ -543,7 +543,7 @@ export default class HomePage extends SafeAreaBaseContainer {
               onValueChange={(value) => this.onSwithPannelBrightness(value)}
               switchValue={penelBrightnessEnable}
               tintColor="#E5E5E5"
-              onTintColor="#57B3E7"
+              onTintColor="#00D3BE"
               showShadow={true}
               marginTop={0}
               icon={penelBrightnessEnable ? GSImage.ACLightOn : GSImage.ACLight}
@@ -568,7 +568,7 @@ export default class HomePage extends SafeAreaBaseContainer {
               }
               switchValue={swingOn}
               tintColor="#E5E5E5"
-              onTintColor="#57B3E7"
+              onTintColor="#00D3BE"
               showShadow={true}
               marginTop={0}
               icon={swingOn ? GSImage.SweptWindOn : GSImage.SweptWind}

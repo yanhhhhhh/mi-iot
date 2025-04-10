@@ -65,7 +65,7 @@ export default class GSDatePicker extends React.PureComponent {
               style={{ width: 125, height: '100%', marginRight: 61 }}
               dataSource={years}
               defaultValue={showYear}
-              pickerInnerStyle={{ lineColor: "transparent", textColor: "#999999", selectTextColor: "#57B3E7", fontSize: 16, selectFontSize: 18, rowHeight: 70, selectBgColor: "#transparent" }}
+              pickerInnerStyle={{ lineColor: "transparent", textColor: "#999999", selectTextColor: "#00D3BE", fontSize: 16, selectFontSize: 18, rowHeight: 70, selectBgColor: "#transparent" }}
               onValueChanged={(data) => {
                 this.setState({
                   yearValue: data.newValue
@@ -77,7 +77,7 @@ export default class GSDatePicker extends React.PureComponent {
               style={{ width: 125, height: '100%' }}
               dataSource={months}
               defaultValue={showMonth}
-              pickerInnerStyle={{ lineColor: "transparent", textColor: "#999999", selectTextColor: "#57B3E7", fontSize: 16, selectFontSize: 18, rowHeight: 70, selectBgColor: "#transparent" }}
+              pickerInnerStyle={{ lineColor: "transparent", textColor: "#999999", selectTextColor: "#00D3BE", fontSize: 16, selectFontSize: 18, rowHeight: 70, selectBgColor: "#transparent" }}
               onValueChanged={(data) => {
                 this.setState({
                   monthValue: data.newValue
@@ -96,7 +96,7 @@ export default class GSDatePicker extends React.PureComponent {
             }>
               <Text style = {{ ...styles.text, color: '#333333' }}>{GSLocalize('acid54')}</Text>
             </TouchableOpacity>
-            <TouchableOpacity style = {{ ...styles.button, backgroundColor: '#57B3E7' }} onPress={() => {
+            <TouchableOpacity style = {{ ...styles.button, backgroundColor: '#00D3BE' }} onPress={() => {
               if (this.props.onConfirm) {
                 this.props.onConfirm({ yearValue, monthValue });
               }
@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
 
   unitText: {
     position: 'absolute',
-    color: '#57B3E7',
+    color: '#00D3BE',
     fontSize: 10,
     fontWeight: GSFont.Regular,
     lineHeight: 14,

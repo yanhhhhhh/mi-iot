@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
     borderColor: '#E5E5E5'
   },
   countContainerClick: {
-    borderColor: '#57B3E7'
+    borderColor: '#00D3BE'
   },
   ImageStyle: {
     marginTop: 12,
@@ -330,7 +330,7 @@ const styles = StyleSheet.create({
     marginTop: 12
   },
   selectWordColor: { // 文字选中颜色
-    color: '#57B3E7'
+    color: '#00D3BE'
   },
   configBtnCommon: {
     width: MainScreen.width - 40,

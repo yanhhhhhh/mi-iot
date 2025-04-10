@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
     lineHeight: sectionHeaderHeight,
     textAlign: 'left',
     textAlignVertical: 'center',
-    color: '#57B3E7',
+    color: '#00D3BE',
     fontSize: 16,
     fontWeight: GSFont.Semibold,
     marginLeft: 20,

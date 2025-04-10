@@ -343,7 +343,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
         }}
         value={on}
         tintColor={'#E5E5E5'}
-        onTintColor={'#57B3E7'}
+        onTintColor={'#00D3BE'}
         showSeparator={false}
       />
       {/* 睡眠时段 */}
@@ -397,7 +397,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
           }}
           value={swingEnable}
           tintColor={'#E5E5E5'}
-          onTintColor={'#57B3E7'}
+          onTintColor={'#00D3BE'}
           showSeparator={false}
         />
       }
@@ -429,7 +429,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
         <View style={{ width: '100%', height: maxTempH, flexDirection: 'row', backgroundColor: '#F7F7F7' }}>
           {/* left */}
           <View style={{ width: (CW - 2) * 0.25, height: '100%', flexDirection: 'column-reverse' }}>
-            <View style={{ position: 'absolute', height: controlBarH0, width: '100%', alignItems: 'center', backgroundColor: '#57B3E7' }}>
+            <View style={{ position: 'absolute', height: controlBarH0, width: '100%', alignItems: 'center', backgroundColor: '#00D3BE' }}>
               <View style={{ marginTop: 4, height: 4, borderRadius: 2, width: 32, backgroundColor: 'white' }} />
             </View>
           </View>
@@ -437,7 +437,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
 
           {/* middle (CW - 2) * 0.5 - 48 */}
           <View style={{ width: (CW - 2) * 0.5, height: '100%', flexDirection: 'column-reverse' }}>
-            <View style={{ position: 'absolute', height: controlBarH1, width: '100%', alignItems: 'center', backgroundColor: '#57B3E7' }}>
+            <View style={{ position: 'absolute', height: controlBarH1, width: '100%', alignItems: 'center', backgroundColor: '#00D3BE' }}>
               <View style={{ marginTop: 4, height: 4, borderRadius: 2, width: 32, backgroundColor: 'white' }} />
             </View>
           </View>
@@ -445,7 +445,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
 
           {/* right */}
           <View style={{ width: (CW - 2) * 0.25, height: '100%', flexDirection: 'column-reverse' }}>
-            <View style={{ position: 'absolute', height: controlBarH2, width: '100%', alignItems: 'center', backgroundColor: '#57B3E7' }}>
+            <View style={{ position: 'absolute', height: controlBarH2, width: '100%', alignItems: 'center', backgroundColor: '#00D3BE' }}>
               <View style={{ marginTop: 4, height: 4, borderRadius: 2, width: 32, backgroundColor: 'white' }} />
             </View>
           </View>
@@ -641,7 +641,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
       title={GSLocalize("acid82")}
       options={[{ title: GSLocalize("acid89") }, { title: GSLocalize("acid83") }, { title: GSLocalize("acid84") }, { title: GSLocalize("acid85") }, { title: GSLocalize("acid86") }, { title: GSLocalize("acid87") }, { title: GSLocalize("acid88") }]}
       selectedIndexArray={this.state.repeats}
-      color="#57B3E7"
+      color="#00D3BE"
       buttons={[
         {
           text: GSLocalize("acid54"),
@@ -684,7 +684,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
       visible={true}
       title={GSLocalize("acid38")}
       showSubtitle={true}
-      confirmColor="#57B3E7"
+      confirmColor="#00d3be"
       type={MHDatePicker.TYPE.TIME24}
       current={SleepModePageControl.changeMintesToArray(this.state.willStartTime)}
       onSelect={(res) => {
@@ -709,7 +709,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
       visible={true}
       title={GSLocalize("acid55")}
       showSubtitle={true}
-      confirmColor="#57B3E7"
+      confirmColor="#00d3be"
       type={MHDatePicker.TYPE.TIME24}
       // singleType={MHDatePicker.SINGLE_TYPE.HOUR}
       current={SleepModePageControl.changeMintesToArray(this.state.willEndTime)}
@@ -768,7 +768,7 @@ export default class SleepModePage extends SafeAreaBaseContainer {
       }} />
       <ListItem title={afterSleepDoTitles[2]}
         containerStyle={{ marginTop: 0, width: MainScreen.width, height: 52, backgroundColor: 'white' }}
-        titleStyle={{ textAlign: 'left', fontSize: 16, color: afterSleepState == 2 ? '#57B3E7' : '#000000', fontWeight: GSFont.Regular, height: 20 }}
+        titleStyle={{ textAlign: 'left', fontSize: 16, color: afterSleepState == 2 ? '#00D3BE' : '#000000', fontWeight: GSFont.Regular, height: 20 }}
         onPress={(val) => {
           this.onSelectAfterSleep(2);
         }}
@@ -816,14 +816,14 @@ export default class SleepModePage extends SafeAreaBaseContainer {
             bgColorNormal: '#F5F5F5'
           },
           rightButtonBgStyle: {
-            bgColorNormal: '#57B3E7'
+            bgColorNormal: '#00D3BE'
           }
         }
       }
       visible={true}
       title={GSLocalize("acid93")}
       showSubtitle={false}
-      confirmColor="#57B3E7"
+      confirmColor="#00d3be"
       type={MHDatePicker.TYPE.SINGLE}
       singleType={MHDatePicker.SINGLE_TYPE.MINUTE}
       current={[`${ this.state.delayTime }`]}
@@ -916,7 +916,7 @@ const styles = StyleSheet.create({
 
   rightButtonBgStyle: {
     marginLeft: 12,
-    backgroundColor: '#57B3E7',
+    backgroundColor: '#00D3BE',
     width: 153 * (MainScreen.width / 375),
     height: 44,
     borderRadius: 22,
@@ -948,7 +948,7 @@ const datePickerStyle = {
     bgColorNormal: '#F5F5F5'
   },
   rightButtonBgStyle: {
-    bgColorNormal: '#57B3E7'
+    bgColorNormal: '#00D3BE'
   },
   subTitleStyle: {
     color: '#666666',

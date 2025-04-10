@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   confirmBtn: {
     height: 44,
     borderRadius: 22,
-    backgroundColor: '#57B3E7',
+    backgroundColor: '#00D3BE',
     marginLeft: 28,
     width: MainScreen.width - 56,
     position: 'absolute',

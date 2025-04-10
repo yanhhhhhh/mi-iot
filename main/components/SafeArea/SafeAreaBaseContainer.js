@@ -138,7 +138,7 @@ export default class SafeAreaBaseContainer extends React.PureComponent {
    * 设置默认为：主页渐变， 暗黑模式下： 背景为黑色的样式
    */
   setBlackModeBlackGradient = () => {
-    let bg = { color: '#57B3E7', opacity: 1.0, color1: '#57B3E7', opacity1: 0.0 };
+    let bg = { color: '#00D3BE', opacity: 1.0, color1: '#00D3BE', opacity1: 0.0 };
     if (GSSystem.isDarkMode()) { // 黑暗模式
       bg = { color: '#000000', opacity: 1.0, color1: '#000000', opacity1: 1.0 };
     }
